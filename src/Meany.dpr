@@ -1,4 +1,10 @@
-﻿program Meany;
+﻿{
+  Copyright (c) 2025, Peter Johnson, delphidabbler.com
+  MIT License
+  https://github.com/ddabapps/meany
+}
+
+program Meany;
 
 uses
   System.StartUpCopy,
