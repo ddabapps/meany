@@ -1,0 +1,95 @@
+object HelpForm: THelpForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Help'
+  ClientHeight = 448
+  ClientWidth = 476
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  object HelpMemo: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      
+        'Meany calculates various averages and related mathmatical functi' +
+        'ons.'
+      ''
+      
+        'Select a type of average by clicking the average selection butto' +
+        'n on the left.'
+      ''
+      
+        'All averages require at least one number to be entered in the Va' +
+        'lues control. The number and range of values required depends on' +
+        ' the average.'
+      ''
+      
+        'Weighted averages require weights to be entered in the Weights c' +
+        'ontrol. There should be exactly the same number of weights as th' +
+        'e number of values entered in the Values control. Weights must b' +
+        'e non-negative floating point numbers and at least one weight mu' +
+        'st be positive.'
+      ''
+      
+        'The Power Means also require a non-zero power to be entered in t' +
+        'he Lambda edit control.'
+      ''
+      
+        'Hover the mouse over an average selection button to see a pop-up' +
+        ' hint describing the data entry rules for that average.'
+      ''
+      
+        'All numbers should be entered in the format used by your current' +
+        ' locale. Numbers can be separated by spaces, new lines or your l' +
+        'ocale'#39's list separator.'
+      ''
+      
+        'Once all values have been entered click the Calculate button. Th' +
+        'e result will be displayed in the Result edit box.'
+      ''
+      'The following keyboard shortcuts are supported:'
+      ''
+      '* Calculate - F5 or F9'
+      '* Settings - Ctrl+Shift+F11'
+      '* Help - F1'
+      '')
+    ReadOnly = True
+    Align = Client
+    Size.Width = 476.000000000000000000
+    Size.Height = 408.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 476.000000000000000000
+    Viewport.Height = 408.000000000000000000
+  end
+  object BottomPanel: TPanel
+    Align = MostBottom
+    Position.Y = 408.000000000000000000
+    Size.Width = 476.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object CloseButton: TCornerButton
+      Anchors = [akTop, akRight, akBottom]
+      ModalResult = 2
+      Position.X = 388.000000000000000000
+      Position.Y = 8.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 80.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Close'
+      TextSettings.Trimming = None
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+    end
+  end
+end

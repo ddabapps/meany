@@ -1,0 +1,32 @@
+object SettingsForm: TSettingsForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Settings'
+  ClientHeight = 264
+  ClientWidth = 356
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object HoldingTextLabel: TLabel
+    Align = Client
+    StyledSettings = [Family, FontColor]
+    Margins.Left = 24.000000000000000000
+    Margins.Top = 24.000000000000000000
+    Margins.Right = 24.000000000000000000
+    Margins.Bottom = 48.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 192.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 
+      'Nothing to see here! Tweakable settings will arrive in a later v' +
+      'ersion.'
+    TabOrder = 0
+  end
+end
